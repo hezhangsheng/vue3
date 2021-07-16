@@ -3,7 +3,7 @@ module.exports = {
   outputDir: "dist", // 打包路径
   assetsDir: "assets", // 打包后静态资源存放路径  相对于 'outputDir'
   lintOnSave: process.env.NODE_ENV === "development", // 是否启用 eslint 验证
-  productionSourceMap: true, // 生产环境是否生成 sourceMap 文件
+  productionSourceMap:process.env.VUE_APP_NAME !== 'production', // 生产环境是否生成 sourceMap 文件
   devServer: {
     port: 8080, // 端口号
     open: true, // 自动打开浏览器
