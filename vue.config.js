@@ -1,7 +1,7 @@
 module.exports = {
   publicPath: "/", // 基本路径
   outputDir: "dist", // 打包路径
-  assetsDir: "assets", // 打包后静态资源存放路径  相对于 'outputDir'
+  assetsDir: "static", // 打包后静态资源存放路径  相对于 'outputDir'
   lintOnSave: process.env.NODE_ENV === "development", // 是否启用 eslint 验证
   productionSourceMap:process.env.VUE_APP_NAME !== 'production', // 生产环境是否生成 sourceMap 文件
   devServer: {
