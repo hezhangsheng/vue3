@@ -1,4 +1,4 @@
-# my-first-vue-project
+# vue3
 
 ## Project setup
 ```
